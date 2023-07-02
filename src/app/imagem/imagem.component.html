@@ -1,0 +1,14 @@
+<app-home></app-home>
+<h2>Página Imagem</h2>
+<p>Você está na página Imagem</p>
+
+<input type="text" [(ngModel)]="nomeImagem" placeholder="Nome da imagem">
+<button (click)="inserirImagem()">Inserir Imagem</button>
+<button (click)="retirarImagem()">Retirar Imagem</button>
+
+<div class="gallery">
+  <div *ngFor="let imagem of imagens" class="image">
+    <img [src]="imagem.url" [alt]="imagem.nome" width="10%" height="10%">
+    <p>Nome input: {{ imagem.nome }}</p>
+  </div>
+</div>

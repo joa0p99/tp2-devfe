@@ -1,0 +1,9 @@
+.nome-id-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nome-container, .id-container {
+    margin-right: 10px;
+  }
+  

@@ -1,0 +1,10 @@
+<nav>
+    <button><a routerLink="" routerLinkActive="active">Home</a></button>
+    <button><a routerLink="/imagem" routerLinkActive="active">Imagem</a></button>
+    <button><a routerLink="/nomes" routerLinkActive="active">Nomes</a></button>
+</nav>
+
+<ng-container *ngIf="isPaginaHome()">
+    <h2>Página Home</h2>
+    <p>Você está na Home</p>
+  </ng-container>

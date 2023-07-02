@@ -1,0 +1,17 @@
+<h2>Detalhes do Nome</h2>
+<div class="nome-id-container">
+  <div class="nome-container">
+    <p>Nome: {{ nome }}</p>
+  </div>
+  <div class="id-container">
+    <p>ID: {{ id }}</p>
+  </div>
+</div>
+
+<div>
+  <label>Editar nome:</label>
+  <input type="text" [(ngModel)]="novoNome" />
+</div>
+
+<button (click)="salvar()">Salvar</button>
+<button (click)="cancelar()">Cancelar</button>

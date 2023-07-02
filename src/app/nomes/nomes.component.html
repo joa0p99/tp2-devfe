@@ -1,0 +1,15 @@
+<app-home></app-home>
+<h2>Página Nomes</h2>
+<p>Você está na página Nomes</p>
+
+<div>
+  <input type="text" [(ngModel)]="novoNome" placeholder="Novo Nome">
+  <button (click)="inserirNome()">Inserir</button>
+</div>
+
+<ul>
+  <li *ngFor="let nome of nomes">
+    <a [routerLink]="['/detalhes', nome.nome, nome.id]">{{ nome.nome }}</a>
+    <button (click)="removerNome(nome.id)">Remover</button>
+  </li>
+</ul>
